@@ -4,7 +4,7 @@
    Using CSS is recommended by some. 
 */
 /* put borders around th,td and set background color */
-th, td {
+table, th, td, form {
     /* border: 0.5px solid black; */
     /* empty-cells:show; */
     /* border-collapse: collapse; */
@@ -73,7 +73,29 @@ dt:hover  + dd{
     background-color:#FF00FF;
 }
 
+/* style li for forms */
 
-    /* 
-   When you hover over the dd item, it should not turn purple. 
- */
+li {
+    list-style-type:none;
+}
+
+/* outer-content styles */
+div.outer-content{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 20px;
+    background-color:pink;
+    width: 75%;
+    padding: 10px;
+}
+
+div.inner-content{
+    text-align: center; /* center text in div*/
+    margin: 0 auto;  /* center div in parent */
+    background-color:lightblue;
+    width: 75%;
+}
+
+img{
+    float:left;
+}
