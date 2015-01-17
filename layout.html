@@ -7,27 +7,85 @@
   <body>
     <!-- 
     see https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables
+
+
+
+Make a new repository called 'cs290-assignment2' at the location you specified in week 1.
+Make a layout.html and style.css file in that repo.
+These files will be the only files used for grading this assignment.
+All styling should be applied from style.css.
+No ids or classes should be used except where specified in the assignment.
+This assignment must be hosted on a live web server. When you submit you will need to include a URL to the live version of the page.
+
+
+Create a table that has that is 6x6 (inclusive of the header row).
+
++The upper left cell should be empty. The others should be non-empty.
+    what should they contain?
+
++The table should have a caption detailing the contents of the table.
++The table should have a header section, all the cells in this section should have bold text. (This is the default for th)
++The first column of the table should have header cells that have italic text. (These should not be bold)
++The first non-header cell of each non-header row should have 'red' text.
++The third non-header cell of each non-header row should have 'blue' text.
++Odd non-header/footer rows should have a light green background.
++Even non-header/footer rows should have a light blue background
++The table should have a footer section made up of two cells, one should be 2 columns wide, the other should be 4 columns wide.
+
+
     -->
-    <table id = "a2_table" border="1">
-      <caption>Caption</caption>
-      <tr> <!-- row 1  -->
-	<td>a<td>a<td>a<td>a<td><td>
+    <table>
+      <caption>Table Caption for Assignment2</caption>
+      <tr> <!-- row 1 (header) -->
+	<thead>
+	  <th><th>header<th>header<th>header<th>header<th>header
+	  </thead>
       </tr>
       <tr> <!-- row 2  -->
-	<td><td><td><td><td><td>
+	<td>cell<td>cell<td>cell<td>cell<td>cell<td>cell
       </tr>
       <tr> <!-- row 3  -->
-	<td><td><td>a<td><td><td>
+	<td>cell<td>cell<td>cell<td>cell<td>cell<td>cell
       </tr>
       <tr> <!-- row 4  -->
-	<td><td><td><td><td><td>
+	<td>cell<td>cell<td>cell<td>cell<td>cell<td>cell
       </tr>
       <tr> <!-- row 5  -->
-	<td><td><td><td>a<td><td>
+	<td>cell<td>cell<td>cell<td>cell<td>cell<td>cell      
       </tr>
       <tr> <!-- row 6  -->
-	<td><td><td><td><td><td>
+	<td>cell<td>cell<td>cell<td>cell<td>cell<td>cell      
       </tr>
+      <tfoot>
+	<td colspan="2">a
+	<td colspan="4">b
+      </tfoot>
     </table>
+
+
+<!-- 
+
+
+Create a dl list with at least 3 entries
+
+    When you hover over a dt entry, its dd item should get a purple background.
+    When you hover over the dd item, it should not turn purple.
+
+
+ -->
+
+    <dl>
+      <dt>term1</dt>
+      <dd>A definition list &ltdl&gt defines a term. </dd>
+      <dd>A definition description &ltdd&gt describes the most recent definition list. </dd>
+      <dt>term2</dt>
+      <dd>term2 definition 1</dd>
+      <dd>term2 defn 2</dd>
+      <dt>term3</dt>
+      <dd>term3 defn1 </dd>
+      <dd>term3 defn2 </dd>
+    </dl>
+
+
   </body>
 </html>

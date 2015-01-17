@@ -1,5 +1,73 @@
-#a2_table{
-    border: 3px #000000;
-    empty-cells:show;
-    background-color:#efe;
+
+/* 
+   Table borders are CSS, not HTML but they're on the blurry line. 
+   Using CSS is recommended by some. 
+*/
+/* put borders around th,td and set background color */
+th, td {
+    /* border: 0.5px solid black; */
+    /* empty-cells:show; */
+    /* border-collapse: collapse; */
+    /* background-color:#ff; */ /*white*/
+    border-color: #777777; /* grey */
+    border-style: solid;
+    border-width: 1px;
 }
+ 
+
+/* Make first column have italic text */
+tbody td:first-child{
+    font-style:italic;
+}
+
+/* The first non-header cell of each non-header row should have 'red' text. */
+tbody td:nth-child(2){
+    color:red;
+}
+
+/* The third non-header cell of each non-header row should have 'blue' text. */
+tbody td:nth-child(4){
+    color:blue;
+}
+
+/* Odd non-header/footer rows should have a light green background. */
+tbody tr:nth-child(odd){
+    background-color:#aaFFcc; 
+}
+
+/* 
+   colspan is HTML not CSS.   This is debatable, but this is the state
+   at the time of this writing.  (Fri Jan 16, 2015)
+   
+   Thus the following two stanzas do not work on either chrome or
+ firefox. 
+ */
+
+/* 
+tfoot td:first-child{
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
+
+
+tfoot td:nth-child(2){
+    column-span: 4;
+    -webkit-column-span: 4;
+    -moz-column-span: 4;
+}
+*/
+
+
+/* 
+   When you hover over a dt entry, its dd item should get a purple
+   background. 
+   */
+dt:hover {
+    background-color:#FF00FF;
+}
+
+
+    /* 
+   When you hover over the dd item, it should not turn purple. 
+ */
