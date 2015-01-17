@@ -61,9 +61,15 @@ tfoot td:nth-child(2){
 
 /* 
    When you hover over a dt entry, its dd item should get a purple
-   background. 
+   background. Couldn't get this to work for all dds between each dt,
+   but I don't think that's necessary.  
+   
+   For the record, dt:hover ~ dd selects all dd from dt to </dl>, I
+   think there's definitely a combination that would allow to select
+   all siblings until the next dt, but I'm tired of digging for it. 
+
    */
-dt:hover ~ dd {
+dt:hover  + dd{
     background-color:#FF00FF;
 }
 
