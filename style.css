@@ -1,0 +1,5 @@
+#a2_table{
+    border: 3px #000000;
+    empty-cells:show;
+    background-color:#efe;
+}
