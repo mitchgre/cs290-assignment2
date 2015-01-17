@@ -63,7 +63,7 @@ tfoot td:nth-child(2){
    When you hover over a dt entry, its dd item should get a purple
    background. 
    */
-dt ~ dd:hover {
+dt:hover + dd {
     background-color:#FF00FF;
 }
 
